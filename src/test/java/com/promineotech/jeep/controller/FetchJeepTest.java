@@ -30,7 +30,6 @@ class FetchJeepTest {
   
   @LocalServerPort
   private int serverPort;
-
   
   @Test
   void testThatJeepsAreReturnedWhenAValidModelAndTrimAreSupplied() {
@@ -47,7 +46,5 @@ class FetchJeepTest {
     assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
     
   }
-
-
   
 }

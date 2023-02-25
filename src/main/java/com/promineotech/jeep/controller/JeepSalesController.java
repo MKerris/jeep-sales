@@ -33,20 +33,20 @@ public interface JeepSalesController {
               responseCode = "200",                                     // 200 = OK
               description = "A list of Jeeps is returned.",
               content = @Content(
-                  mediaType = "appplication/json", 
+                  mediaType = "application/json", 
                   schema = @Schema(implementation = Jeep.class))), 
           @ApiResponse(
               responseCode = "400",                                     // 400 = Bad input/request
               description = "Invalid request parameters.",
-              content = @Content(mediaType = "appplication/json")),
+              content = @Content(mediaType = "application/json")),
           @ApiResponse(
               responseCode = "404",                                     // 404 = Not found
               description = "No Jeeps were found with input criteria.",
-              content = @Content(mediaType = "appplication/json")),
+              content = @Content(mediaType = "application/json")),
           @ApiResponse(
               responseCode = "500",                                     // 500 = Unplanned exception
               description = "An unplanned error occurred.",
-              content = @Content(mediaType = "appplication/json"))
+              content = @Content(mediaType = "application/json"))
       },
 
       parameters = {
@@ -66,10 +66,9 @@ public interface JeepSalesController {
 
   @GetMapping                                           // Spring will map GET requests at /jeeps to the fetchJeeps method
   @ResponseStatus(code = HttpStatus.OK)
-  List<Jeep> fetchJeeps(
+    List<Jeep> fetchJeeps(
       @RequestParam(required = false) JeepModel model, 
       @RequestParam(required = false) String trim);
-
   // @formatter:on
 
 }
