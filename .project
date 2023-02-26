@@ -25,4 +25,11 @@
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>org.eclipse.m2e.core.maven2Nature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>Spring Week13 Coding Assignment.pdf</name>
+			<type>1</type>
+			<location>C:/Users/mkerr/Desktop/Back End Coding Bootcamp/Assignments/Week13/Spring Week13 Coding Assignment.pdf</location>
+		</link>
+	</linkedResources>
 </projectDescription>

@@ -7,8 +7,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 
-@Data
-@Builder
+@Data                                           // creates getters, setters, equals, toString, no argument constructor
+@Builder                                        // all args constructor
 @NoArgsConstructor
 @AllArgsConstructor
 public class Jeep {
