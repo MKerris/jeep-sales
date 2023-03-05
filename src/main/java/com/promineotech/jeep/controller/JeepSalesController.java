@@ -69,6 +69,6 @@ public interface JeepSalesController {
     List<Jeep> fetchJeeps(
       @RequestParam(required = false) JeepModel model, 
       @RequestParam(required = false) String trim);
-  // @formatter:on
 
+  // @formatter:on
 }
